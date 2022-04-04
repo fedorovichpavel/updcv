@@ -184,6 +184,10 @@ body {
   padding: 30px 0 30px 30px;
 }
 
+.experience {
+  display: flex;
+  flex-direction: column;
+}
 .experience h4 {
   font-size: 24px;
   padding-bottom: 5px;
@@ -192,15 +196,19 @@ body {
 .experience strong {
   font-weight: 600;
 }
-.experience > div {
+.experience .experience_title {
   padding: 0;
   flex-direction: row;
 }
-.experience > div > div {
-  padding: 0;
+.experience .experience-item {
+  border-top: 1px solid rgba(129, 129, 129, 0.3);
+  padding: 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.experience :nth-child(7) {
-  padding-top: 25px;
+.experience .experience-item ul {
+  margin-left: 20px;
 }
 
 .term {
